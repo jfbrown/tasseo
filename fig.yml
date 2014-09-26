@@ -1,0 +1,12 @@
+rails:
+  image: ruby:1.9
+  volumes:
+    - .:/data
+  working_dir: /data
+  ports:
+    - "5000:5000"
+  environment:
+    VIRTUAL_HOST: "dev.localhost.com"
+    GRAPHITE_URL: http://statsd.mobiledevhq.com
+  command: bundle exec foreman start
+
