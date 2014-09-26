@@ -7,6 +7,6 @@ rails:
     - "5000:5000"
   environment:
     VIRTUAL_HOST: "dev.localhost.com"
-    GRAPHITE_URL: http://statsd.mobiledevhq.com
+    GRAPHITE_URL: <your statsd instance here>
   command: bundle exec foreman start
 
