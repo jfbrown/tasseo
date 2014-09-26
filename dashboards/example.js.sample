@@ -1,0 +1,6 @@
+var metrics = [{
+  "alias": "Emails",
+  "target": "stats.gauges.production.resque.queue.send_email_job",
+  "warning": 15000,
+  "critical": 50000,
+}]
